@@ -34,7 +34,7 @@ int count_subset_sum(int *arr,int size ,int sum){
                  t[i][j] =  t[i-1][j];
             }
         }
-        
+          
     }
     return t[size][sum];
 
