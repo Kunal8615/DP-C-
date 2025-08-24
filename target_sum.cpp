@@ -1,0 +1,1 @@
+//same as subset sum with a given differnece .

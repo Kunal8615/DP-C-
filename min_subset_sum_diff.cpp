@@ -28,7 +28,7 @@ int min_sub_diff(int *arr, int arr_size, int arr_sum)
 
     // Collect valid subset sums from last row
     vector<int> partial_arr;
-    for (int i = 0; i <= arr_sum / 2; i++) {  // half tak hi check karna
+    for (int i = 0; i <= arr_sum / 2; i++) {  
         if (t[arr_size][i] == 1) {
             partial_arr.push_back(i);
         }
