@@ -41,7 +41,7 @@ int count_sub_diff(int *arr, int size, int subset)
 int main()
 {
     int sum = 0;
-    int arr[4] = {1, 1, 2, 3};
+    int arr[] = {1, 1, 2, 3};
     int diff = 1;
     int size = sizeof(arr) / sizeof(arr[0]);
     for (int i = 0; i < size; i++)
@@ -50,8 +50,8 @@ int main()
     }
     // cout<<sum<<endl;
     int subset = (diff + sum)/2;
-    //cout << sum << endl;
-    // cout << size << endl;
+    cout << sum << endl;
+     cout << size << endl;
    cout << count_sub_diff(arr, size, subset);
 return 0;
    
