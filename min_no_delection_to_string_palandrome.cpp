@@ -41,5 +41,9 @@ int main(){
     int size_b = str2.size();;
   //  cout<<size_a;
     reverse(str2.begin(), str2.end());
-   cout<<long_sub(str1,str2,size_a,size_b);
+    int result = long_sub(str1,str2,size_a,size_b);
+    
+   cout << (size_a - result) << endl; // print to console
+    
+    return 0; 
 }
