@@ -19,10 +19,7 @@ int lcs(char *a, char *b, int size_a, int size_b)
 
         }
     }
-
-
-
-
+    
     for (int i = 1; i <= size_a; i++)
     {
         for (int j = 1; j <= size_b; j++)
