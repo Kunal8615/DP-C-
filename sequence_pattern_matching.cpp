@@ -39,6 +39,7 @@ int main(){
     int size_a = a.size();
     string b = "adxfpy";
     int size_b = b.size();
+    cout<<size_b<<endl;
    int lcs = long_sub(a,b,size_a,size_b);
   // cout<<lcs << endl<<a.length();
    if(lcs == a.length()){
