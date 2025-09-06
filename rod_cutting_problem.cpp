@@ -44,6 +44,7 @@ int main()
     int length[] = {1, 2, 3, 4, 5, 6, 7, 8};
     int price[] = {1, 5, 8, 9, 10, 1, 2, 20};
     int size = sizeof(price) / sizeof(price[0]);
+   // cout<<size<<endl;
     int rod_length = 8;
     cout << rod_cut(length, price, size, rod_length);
     return 0;
