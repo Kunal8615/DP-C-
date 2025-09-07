@@ -10,18 +10,17 @@ int knapsack(int wt[], int val[], int w, int n) {
     if (n == 0 || w == 0)
         return 0;
 
-    // If already computed, return value
-    if (t[n][w] != -1)
+    // If already computed, return value f (t[n][w] != -1)
         return t[n][w];
 
-    // If weight of the item is less than or equal to remaining capacity
+  
     if (wt[n - 1] <= w) {
         t[n][w] = max(
             val[n - 1] + knapsack(wt, val, w - wt[n - 1], n - 1),
             knapsack(wt, val, w, n - 1)
         );
     }
-    // If item can't be included
+ 
     else {
         t[n][w] = knapsack(wt, val, w, n - 1);
     }
