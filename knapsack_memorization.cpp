@@ -8,7 +8,7 @@ int max(int a, int b) {
 }
 
 int knapsack(int wt[], int val[], int W, int n) {
-    // Base case initialization
+    // Base case initializati
     for (int i = 0; i <= n; i++) {
         for (int j = 0; j <= W; j++) {
             if (i == 0 || j == 0) {
@@ -29,7 +29,7 @@ int knapsack(int wt[], int val[], int W, int n) {
     }
 
     return t[n][W];
-}
+}  
 
 int main() {
     int wt[] = {2, 1, 3, 2};

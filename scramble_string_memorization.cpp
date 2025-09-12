@@ -1,10 +1,27 @@
 #include <iostream>
 #include <algorithm>
 #include <climits>
+#include <stdlib.h>
+#include <bits/stdc++.h>
 using namespace std;
+
+unordered_map<string,int> t;
+
 
 bool solve(string a,string b){
 
+
+//map key 
+    string temp =  a;
+    temp.push_back(' ');
+    temp.append(b);
+
+
+if(t.find(temp) != t.end()){
+    return t[temp];
+}
+
+//
     if(a.compare(b)==0){
         return true;
     }
@@ -26,6 +43,7 @@ bool solve(string a,string b){
           flag = true;
         }
     } 
+    t[temp] = flag;
     return flag;
     
 }
